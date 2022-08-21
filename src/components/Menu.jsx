@@ -1,13 +1,33 @@
 import React, { Component } from "react";
 
+class MenuItem extends Component {
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    const { page, onClick } = this.props;
+    onClick(page);
+  }
+
+  render() {
+    const { title } = this.props;
+
+    return <div className="menu-item" onClick={this.handleClick}>{title}</div>
+  }
+}
+
 export default class Menu extends Component {
   render() {
+    const onClick = this.props.onMenuClick;
+
     return (
       <div className="menu-container">
-        <div class="menu-item">메뉴A</div>
-        <div class="menu-item">메뉴B</div>
-        <div class="menu-item">메뉴C</div>
-        <div class="menu-item">메뉴D</div>
+        <MenuItem page="intro" title="Intro" onClick={onClick}/>
+        <MenuItem page="skills" title="Skills" onClick={onClick}/>
+        <MenuItem page="studies" title="Studies" onClick={onClick}/>
+        <MenuItem page="works" title="Works" onClick={onClick}/>
       </div>
     );
   }
