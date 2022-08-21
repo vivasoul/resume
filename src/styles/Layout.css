@@ -1,0 +1,7 @@
+.body-container { height: 100vh; }
+.left-body,.right-body { display:inline-block; height:100%; vertical-align: top; }
+.left-body { width:300px;background-color: rgba(0,0,0,0.5);}
+.right-body { width:calc(100% - 300px); }
+
+.menu-container { padding:5rem 1.0rem; }
+.menu-container .menu-item { display:block;height:80px;line-height:80px;text-align:center;color:white;font-size:25px;font-weight:600;}
