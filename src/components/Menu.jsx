@@ -26,8 +26,9 @@ export default class Menu extends Component {
       <div className="menu-container">
         <MenuItem page="intro" title="Intro" onClick={onClick}/>
         <MenuItem page="skills" title="Skills" onClick={onClick}/>
-        <MenuItem page="studies" title="Studies" onClick={onClick}/>
         <MenuItem page="works" title="Works" onClick={onClick}/>
+        <MenuItem page="studies" title="Studies" onClick={onClick}/>        
+        <MenuItem page="tips" title="Tips" onClick={onClick}/>
       </div>
     );
   }

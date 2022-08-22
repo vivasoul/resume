@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Intro from "Intro";
 import Skills from "Skills";
 import Studies from "Studies";
+import Tips from "Tips";
 import Works from "Works";
 
 class Hello extends Component {
@@ -24,6 +25,7 @@ export default class Main extends Component {
         case "skills" :  return <Skills/>;
         case "studies":  return <Studies/>;
         case "works"  :  return <Works/>;
+        case "tips"  :  return <Tips/>;
         default       :  return <Hello/>;
     }
   }

@@ -4,9 +4,11 @@
 .right-body { width:calc(100% - 300px); }
 
 .menu-container { padding:5rem 1.0rem; }
-.menu-container .menu-item { display:block;height:80px;line-height:80px;text-align:center;color:white;font-size:25px;font-weight:600;}
+.menu-container .menu-item { display:block;height:80px;line-height:80px;text-align:center;color:white;font-size:25px;font-weight:600; cursor:pointer;}
+.menu-container .menu-item:hover { background-color:rgba(0,0,0,0.2); color:#333; }
 
 .hello-container { display:inline-block;position:relative;top:20%;left:20%;font-size:70px;font-weight:700; }
+.content-container { padding:40px 30px; }
 
 @media (max-height:500px) {
   .body-container { height: 150vh; }
