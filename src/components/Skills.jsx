@@ -4,7 +4,19 @@ import Stack from 'react-bootstrap/Stack';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { faStar as frStar } from '@fortawesome/free-regular-svg-icons';
 
+function SkillLevel({stars}) {
+  var arr = [0,1,2,3,4];
+
+  return (
+    <>
+      {arr.map(e => <FontAwesomeIcon key={"star_"+e} icon={e < stars ? faStar : frStar} color="#1C89ED"/>)}
+    </>
+  )
+}
 
 function SkillCard(props){
   return (
@@ -12,7 +24,7 @@ function SkillCard(props){
       <Card.Body>
         <Card.Title>JAVA</Card.Title>
         <Card.Text>
-        입니다.
+          <SkillLevel stars={2}/>
         </Card.Text>
       </Card.Body>
     </Card>

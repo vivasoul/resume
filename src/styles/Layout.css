@@ -10,6 +10,6 @@
 .hello-container { display:inline-block;position:relative;top:20%;left:20%;font-size:70px;font-weight:700; }
 .content-container { padding:40px 30px; }
 
-@media (max-height:500px) {
+@media (max-height:550px) {
   .body-container { height: 150vh; }
 }
